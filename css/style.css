@@ -430,22 +430,31 @@ section.skillset #js-bar{
     }
 }
 
-section.skillset #jQuery-bar{
-    animation: jQuery-fill 2s forwards;
+section.skillset #node-bar{
+    animation: node-fill 2s forwards;
 }
-@keyframes jQuery-fill{
+@keyframes node-fill{
     100%{
-        width: 58%;
+        width: 64%;
+    }
+} 
+
+section.skillset #express-bar{
+    animation: express-fill 2s forwards;
+}
+@keyframes express-fill{
+    100%{
+        width: 68%;
     }
 } 
 
 section.skillset #mn-bar{
-    animation: css-fill 2s forwards;
+    animation: mn-fill 2s forwards;
 }
 
-@keyframes css-fill{
+@keyframes mn-fill{
     100%{
-        width: 69%;
+        width: 70%;
     }
 }
 /* office */
@@ -512,39 +521,39 @@ section.officeset .skills:not(:last-child){
     margin-bottom: 30px;
 }
 
-section.officeset #html-bar{
-    animation: html-fill 2s forwards;
+section.officeset #excel-bar{
+    animation: excel-fill 2s forwards;
 }
-@keyframes html-fill{
+@keyframes excel-fill{
     100%{
-        width: 90%;
+        width: 54%;
     }
 }
 
-section.officeset #css-bar{
-    animation: css-fill 2s forwards;
+section.officeset #power-bar{
+    animation: power-fill 2s forwards;
 }
 
-@keyframes css-fill{
+@keyframes power-fill{
     100%{
         width: 75%;
     }
 }
 
-section.officeset #js-bar{
-    animation: js-fill 2s forwards;
+section.officeset #word-bar{
+    animation: word-fill 2s forwards;
 }
-@keyframes js-fill {
+@keyframes word-fill {
     100%{
-        width: 72%;
+        width: 80%;
     }
 }
 
-section.officeset #jQuery-bar{
-    animation: jQuery-fill 2s forwards;
+section.officeset #form-bar{
+    animation: form-fill 2s forwards;
 }
-@keyframes jQuery-fill{
+@keyframes form-fill{
     100%{
-        width: 58%;
+        width: 85%;
     }
 } 
