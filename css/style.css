@@ -1,0 +1,550 @@
+@import url(utilities.css);
+:root{
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #ffffff;
+    --ternary: #898989;
+    --light: #f2f2f2;
+    --secondry: #070606;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background: var(--dark);
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+
+/* responsive section */
+html { font-size:100%; } 
+
+img { max-width: 100%; }
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin:  0 auto;
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3sec ease;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.hero{
+    padding: 3rem 0;
+}
+
+.hero .left img{
+    width: 300px;
+}
+.hero .right{
+    color: var(--pure);
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+    color: var(--primary);
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.hero .right{
+    margin-top: -7rem;
+}
+
+section{
+    padding: 6rem 0;
+}
+section.about .about-me-img{
+    height: 400px;
+    width: 300px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section.about h1 span{
+    color: var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.about p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+}
+section.about .social{
+display: flex;
+}
+
+section.about .social a{
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-top: 0.7rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+
+}
+
+section.about .social #globe{
+    color: var(--pure);
+}
+
+section.about .social #fb{
+    color: var(--pure);
+    
+}
+section.about .social #twitter{
+    color: var(--pure);
+}
+section.about .social #pintrest{
+    color: var(--pure);
+}
+section.about .social #instagram{
+    color: var(--pure);
+}
+
+
+section.about .social a:hover{
+    background: var(--primary);
+    transition: all .3s ease;
+
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading span{
+    color: var(--primary);
+}
+
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Lato' , sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+
+
+/* new codes */
+section.glow .section-heading{
+    color: var(--pure);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+section.glow .section-heading span{
+    color: var(--primary);
+}
+
+
+section.glow{
+    display:flex;
+    margin:0;
+    padding:0;
+    min-height: 100vh;
+    background: #444;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+  }
+  
+  .container1{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    
+  }
+  
+  .container1 .card{
+    position: relative;
+  }
+  
+  .container1 .card .face{
+    width:300px;
+    height: 200px;
+    transition:.4s;
+    
+  }
+  
+  .container1 .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+  
+  .container1 .card:hover .face.face1{
+    transform: translateY(0);
+    box-shadow:
+      inset 0 0 60px whitesmoke,
+      inset 20px 0 50px #f0f,
+      inset -20px 0 50px #0ff,
+      inset 20px 0 200px #f0f,
+      inset -20px 0 200px #0ff,
+      0 0 30px #fff,
+      -10px 0 50px #f0f,
+      10px 0 50px #0ff;
+     
+  }
+  
+  
+  .container1 .card .face.face1 .content{
+    opacity: .1;
+    transition:  0.5s;
+    text-align: center;
+  }
+  
+  .container1 .card:hover .face.face1 .content{
+    opacity: 1;
+   
+  }
+  
+  .container1 .card .face.face1 .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+     
+  }
+  
+  .container1 .card .face.face1 .content h3{
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    
+  
+  }
+  
+  .container1 .card .face.face1 .content a{
+     transition: .5s;
+  }
+  
+  .container1 .card .face.face2{
+     position: relative;
+     background: whitesmoke;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    transform: translateY(-100px);
+  }
+  
+  .container1 .card:hover .face.face2{
+      transform: translateY(0);
+  
+  
+  }
+  
+  .container1 .card .face.face2 .content p, a{
+    font-size: 10pt;
+    margin: 0 ;
+    padding: 0;
+    color:#333;
+  }
+  
+  .container1 .card .face.face2 .content a{
+    text-decoration:none;
+    color: black;
+    box-sizing: border-box;
+    outline : 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+  }
+  
+  .container1 .card .face.face2 .content a:hover{
+    background: #333 ;
+    color: whitesmoke; 
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  }
+  
+  section.skillset{
+    background: var(--ternary);
+}
+
+section.skillset .wrapper{
+    width: 40%;
+    min-width: 570px;
+    position: relative;
+    transform: translate(-50%,-50%);
+    margin-top: 20rem;
+    left: 50%;
+    top: 50%;
+}
+section.skillset .container-s{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background-color: var(--light);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+} 
+section.skillset .container-s *{
+    font-family: "Lato",sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+section.skillset h2{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+section.skillset .details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+section.skillset .bar{
+    position: relative;
+ 
+    border: 2px solid #0d96e0;
+ 
+    border-radius: 20px;
+  
+}
+section.skillset .bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+   
+ 
+}
+
+section.skillset .skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+section.skillset #html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+
+section.skillset #css-bar{
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+
+section.skillset #js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 60%;
+    }
+}
+
+section.skillset #jQuery-bar{
+    animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+    100%{
+        width: 58%;
+    }
+} 
+
+section.skillset #mn-bar{
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill{
+    100%{
+        width: 69%;
+    }
+}
+/* office */
+
+section.officeset{
+    background: var(--ternary);
+}
+
+section.officeset .wrapper{
+    width: 40%;
+   margin: 1 0rem;
+    min-width: 570px;
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+section.officeset .container-s{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background-color: var(--light);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+} 
+section.officeset .container-s *{
+    font-family: "Lato",sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+section.officeset h2{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+section.officeset .details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+section.officeset .bar{
+    position: relative;
+ 
+    border: 2px solid #0d96e0;
+ 
+    border-radius: 20px;
+  
+}
+section.officeset .bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+   
+ 
+}
+
+section.officeset .skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+section.officeset #html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+
+section.officeset #css-bar{
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+
+section.officeset #js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 72%;
+    }
+}
+
+section.officeset #jQuery-bar{
+    animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+    100%{
+        width: 58%;
+    }
+} 
